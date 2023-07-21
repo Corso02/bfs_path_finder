@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path finder</title>
+    <script src="./index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+    <div class="begin-settings-wrapper">
+        <div class="begin-settings-container">
+            <span>Width:</span>
+            <input type="number" name="width" id="width-input">
+        </div>
+        <div class="begin-settings-container">
+            <span>Height:</span>
+            <input type="number" name="height" id="height-input">
+        </div>
+        <span class="custom-button" id="settings-button">Send!</span>
+    </div>
+   
+    <div class="field-container">
+        <div class="field-wrapper" id="field"></div>
+        <div class="field-settings">
+            <span class="custom-button" id="set-start-button">Set start</span>
+            <span class="custom-button" id="set-end-button">Set end</span>
+            <span class="custom-button" id="set-obstacle-button">Set obstacle</span>
+            <span class="custom-button" id="restart-field-button">Restart field</span>
+            <span class="custom-button" id="start-search-button">Start search</span>
+        </div>
+    </div>
+</div>
+    <footer>
+        Created by Peter Vanát
+    </footer>
+</body>
+</html>

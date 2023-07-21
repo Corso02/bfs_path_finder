@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.begin-settings-wrapper{
+    padding: 5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    .begin-settings-container{
+        input[type=number]{ // hide arrows from input field
+            appearance: textfield;
+        }
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+        padding: 5px;
+        span{
+            margin-right: 5px;
+        }
+    }
+    
+}
+
+.custom-button{
+    padding: 5px 10px;
+    margin: 5px;
+    align-self: center;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    opacity: .6;
+    transition: .5s;
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.field-container{
+    display: none;
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+    }
+    .tile{
+        width: 5em;
+        height: 5em;
+        @media screen and (max-width: 500px) {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        display: inline-block;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 2px solid rgba(244, 244, 244, 1);
+    }
+    .path{
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .obstacle{
+        background: rgba(255, 0, 0, 0.5);
+    }
+    .start{
+        background: rgba(0, 38, 255, 0.5);
+    }
+    .end{
+        background: rgba(0, 217, 255, 0.5);
+    }
+    .finalpath{
+        background:  rgba(81, 255, 0, 0.5);
+    }
+    .field-settings{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2.5rem;
+    }
+}
+
+footer{
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
